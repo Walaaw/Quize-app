@@ -1,0 +1,27 @@
+:root{
+    --mainColor:#ECD8CA;
+    --secondryColor:#0CBAA5;
+}
+body{
+    background-color: var(--mainColor)
+}
+/* setting */
+label{
+    color: var(--secondryColor);
+    font-weight: bold;
+}
+.start-btn{
+    background-color: var(--mainColor);
+    font-weight: bold;
+    border: none;
+}
+.start-btn:hover{
+    background-color:rgba(236, 216, 202,0.8);
+}
+/* quize */
+#quize ,#finish ,#alert,#correct,#incorrect{
+    display: none;
+}
+.submit-btn {
+    width: fit-content;
+}

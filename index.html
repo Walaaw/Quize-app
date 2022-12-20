@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/quiz-wissensquiz-allgemeinbildung-lernen-fotolia-225653183-700.jpg"></link>
+    <title>Quize</title>
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- link bootstrap  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- link style -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section id="setting">
+        <div class=" bg-white container w-50 item  my-5  p-5 rounded shadow-lg ">
+            <h2 class="text-center p-2">Setup Quiz</h2>
+            <div>
+                <label for="number" class="form-label p-1 ">Number Of Questions:</label>
+                <input id="number" class="form-control" type="number"  id="no-of-question">
+            </div>
+            <label class=" form-label p-1 my-2" for="difficulty">Difficulty:</label>
+            <div id="difficulty" class="p-1 ">
+              <div class=" form-check">
+                <input type="radio" name="difficulty-check" value="easy" id="difficulty1"  class=" form-check-input">
+                <label for="difficulty1" class=" text-black form-check-label">Easy</label>
+              </div>
+               <div class=" form-check">
+                <input type="radio" name="difficulty-check" value="medium" id="difficulty2"  class=" form-check-input">
+                <label for="difficulty2"  class=" text-black form-check-label">Medium</label>
+               </div>
+               <div class=" form-check">
+                <input type="radio" name="difficulty-check" value="hard" id="difficulty3"  class=" form-check-input">
+                <label for="difficulty3"  class=" text-black form-check-label">Hard</label>
+               </div>
+            </div>
+            <label for="category" class="mt-3">Category:</label>
+            <select id="category" class="form-select mt-3" aria-label="Default select example">
+                        <option value="9">General Knowledge</option>
+                        <option value="27">Animals</option>
+                        <option value="15">Video Games</option>
+                        <option value="23">History</option>
+                        <option value="21">Sports</option>
+                        <option value="18">Science: Computers</option>
+            </select>
+            <button id="start-btn" class=" rounded-pill start-btn d-block py-2 px-4 mt-5 ms-auto">Start </button>
+        </div>
+    </section>
+    <section id="quize" >
+        <div class=" bg-white container w-50 item  my-5  p-5 rounded shadow-lg ">
+            <h2 class="text-center p-2"> Quiz</h2>
+            <hr>
+            <span id="correct" class=" bg-success p-2 rounded text-white ">correct</span>
+            <span id="incorrect" class=" bg-danger p-2 rounded text-white ">incorrect</span>
+             <div class=" submit-btn rounded-pill start-btn d-block py-2 px-4 mt-2 ms-auto">
+                <span class="currentQuestion"></span>
+                <span>of</span>
+                <span class="totalQestion"></span>
+             </div>
+             <div class="Question">
+                <span class="fs-6 fw-bold" >Q:</span>
+                <span class="qeustionText fs-6 fw-bold"></span>
+             </div>
+             <div class="answer mt-3">
+             </div>
+             <div class="alert alert-danger" id="alert">please choose Answer</div>
+            <button id="nextBtn" class=" rounded-pill start-btn d-block py-2 px-4 mt-5 ms-auto">Next </button>
+        </div>
+    </section>
+
+    <section id="finish">
+        <div class=" bg-white w-50 container item  my-5  p-5 rounded shadow-lg ">
+            <h2 class="text-center p-2"> Finish</h2>
+            <hr>
+             <p class="text-center fw-bold">score</p>
+             <p  id="score" class="text-center text-success fw-bold">9</p>
+            <button id="tryAgainBtn" class=" rounded-pill start-btn d-block py-2 px-4 mt-5 ms-auto">try Again?</button>
+        </div>
+    </section>
+
+
+
+    <!-- link jquery -->
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <!-- link bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- link main file -->
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
